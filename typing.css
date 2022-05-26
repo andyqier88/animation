@@ -1,0 +1,24 @@
+@keyframes typing {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes caret {
+    50% {
+      border-right-color: transparent;
+    }
+  }
+  h1 {
+    font: bold 100% "微软雅黑";
+    display: inline-block;
+  }
+  .type-effect {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.05rem solid;
+    display: inline-block;
+    animation: typing 2s steps(55, end),caret 1s steps(1) infinite;
+  }

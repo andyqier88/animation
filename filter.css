@@ -1,0 +1,29 @@
+@keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position:  100% 0;
+    }
+  }
+  .bg {
+    background: url("./1.webp");
+    background-size: cover;
+    position: fixed;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    filter: blur(15px);
+    z-index: -1;
+  }
+  .mask {
+    /* width: 340px; */
+    animation: move 5s infinite;
+    background-image: url("./1.webp");
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 130px;
+    text-align: center;
+  }
